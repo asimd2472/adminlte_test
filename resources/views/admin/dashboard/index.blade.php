@@ -3,33 +3,25 @@
 @section('content')
 
 <div class="app-content-header">
-          <!--begin::Container-->
     <div class="container-fluid">
-    <!--begin::Row-->
     <div class="row">
         <div class="col-sm-6">
         <h3 class="mb-0">Dashboard</h3>
         </div>
-        <div class="col-sm-6">
+        {{-- <div class="col-sm-6">
         <ol class="breadcrumb float-sm-end">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
         </ol>
-        </div>
+        </div> --}}
     </div>
-    <!--end::Row-->
     </div>
-    <!--end::Container-->
 </div>
 
 <div class="app-content">
-          <!--begin::Container-->
           <div class="container-fluid">
-            <!--begin::Row-->
             <div class="row">
-              <!--begin::Col-->
               <div class="col-lg-3 col-6">
-                <!--begin::Small Box Widget 1-->
                 <div class="small-box text-bg-primary">
                   <div class="inner">
                     <h3>150</h3>
@@ -83,11 +75,8 @@
                     More info <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
-                <!--end::Small Box Widget 2-->
               </div>
-              <!--end::Col-->
               <div class="col-lg-3 col-6">
-                <!--begin::Small Box Widget 3-->
                 <div class="small-box text-bg-warning">
                   <div class="inner">
                     <h3>44</h3>
@@ -112,11 +101,9 @@
                     More info <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
-                <!--end::Small Box Widget 3-->
               </div>
               <!--end::Col-->
               <div class="col-lg-3 col-6">
-                <!--begin::Small Box Widget 4-->
                 <div class="small-box text-bg-danger">
                   <div class="inner">
                     <h3>65</h3>
@@ -148,14 +135,9 @@
                     More info <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
-                <!--end::Small Box Widget 4-->
               </div>
-              <!--end::Col-->
             </div>
-            <!--end::Row-->
-            <!--begin::Row-->
-            <div class="row">
-              <!-- Start col -->
+            {{-- <div class="row">
               <div class="col-lg-7 connectedSortable">
                 <div class="card mb-4">
                   <div class="card-header">
@@ -166,9 +148,6 @@
                     <div id="revenue-chart"></div>
                   </div>
                 </div>
-                <!-- /.card -->
-
-                <!-- DIRECT CHAT -->
                 <div class="card direct-chat direct-chat-primary mb-4">
                   <div class="card-header">
                     <h3 class="card-title">Direct Chat</h3>
@@ -192,7 +171,6 @@
                       </button>
                     </div>
                   </div>
-                  <!-- /.card-header -->
                   <div class="card-body">
                     <!-- Conversations are loaded here -->
                     <div class="direct-chat-messages">
@@ -202,79 +180,54 @@
                           <span class="direct-chat-name float-start"> Alexander Pierce </span>
                           <span class="direct-chat-timestamp float-end"> 23 Jan 2:00 pm </span>
                         </div>
-                        <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src="./assets/img/user1-128x128.jpg"
                           alt="message user image"
                         />
-                        <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           Is this template really for free? That's unbelievable!
                         </div>
-                        <!-- /.direct-chat-text -->
                       </div>
-                      <!-- /.direct-chat-msg -->
-
-                      <!-- Message to the end -->
                       <div class="direct-chat-msg end">
                         <div class="direct-chat-infos clearfix">
                           <span class="direct-chat-name float-end"> Sarah Bullock </span>
                           <span class="direct-chat-timestamp float-start"> 23 Jan 2:05 pm </span>
                         </div>
-                        <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src="./assets/img/user3-128x128.jpg"
                           alt="message user image"
                         />
-                        <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">You better believe it!</div>
-                        <!-- /.direct-chat-text -->
                       </div>
-                      <!-- /.direct-chat-msg -->
-
-                      <!-- Message. Default to the start -->
                       <div class="direct-chat-msg">
                         <div class="direct-chat-infos clearfix">
                           <span class="direct-chat-name float-start"> Alexander Pierce </span>
                           <span class="direct-chat-timestamp float-end"> 23 Jan 5:37 pm </span>
                         </div>
-                        <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src="./assets/img/user1-128x128.jpg"
                           alt="message user image"
                         />
-                        <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           Working with AdminLTE on a great new app! Wanna join?
                         </div>
-                        <!-- /.direct-chat-text -->
                       </div>
-                      <!-- /.direct-chat-msg -->
-
-                      <!-- Message to the end -->
                       <div class="direct-chat-msg end">
                         <div class="direct-chat-infos clearfix">
                           <span class="direct-chat-name float-end"> Sarah Bullock </span>
                           <span class="direct-chat-timestamp float-start"> 23 Jan 6:10 pm </span>
                         </div>
-                        <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src="./assets/img/user3-128x128.jpg"
                           alt="message user image"
                         />
-                        <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">I would love to.</div>
-                        <!-- /.direct-chat-text -->
                       </div>
-                      <!-- /.direct-chat-msg -->
                     </div>
-                    <!-- /.direct-chat-messages-->
-
-                    <!-- Contacts are loaded here -->
                     <div class="direct-chat-contacts">
                       <ul class="contacts-list">
                         <li>
@@ -292,10 +245,8 @@
                               </span>
                               <span class="contacts-list-msg"> How have you been? I was... </span>
                             </div>
-                            <!-- /.contacts-list-info -->
                           </a>
                         </li>
-                        <!-- End Contact Item -->
                         <li>
                           <a href="#">
                             <img
@@ -311,10 +262,8 @@
                               </span>
                               <span class="contacts-list-msg"> I will be waiting for... </span>
                             </div>
-                            <!-- /.contacts-list-info -->
                           </a>
                         </li>
-                        <!-- End Contact Item -->
                         <li>
                           <a href="#">
                             <img
@@ -330,10 +279,8 @@
                               </span>
                               <span class="contacts-list-msg"> I'll call you back at... </span>
                             </div>
-                            <!-- /.contacts-list-info -->
                           </a>
                         </li>
-                        <!-- End Contact Item -->
                         <li>
                           <a href="#">
                             <img
@@ -349,10 +296,8 @@
                               </span>
                               <span class="contacts-list-msg"> Where is your new... </span>
                             </div>
-                            <!-- /.contacts-list-info -->
                           </a>
                         </li>
-                        <!-- End Contact Item -->
                         <li>
                           <a href="#">
                             <img
@@ -368,10 +313,8 @@
                               </span>
                               <span class="contacts-list-msg"> Can I take a look at... </span>
                             </div>
-                            <!-- /.contacts-list-info -->
                           </a>
                         </li>
-                        <!-- End Contact Item -->
                         <li>
                           <a href="#">
                             <img
@@ -387,16 +330,11 @@
                               </span>
                               <span class="contacts-list-msg"> Never mind I found... </span>
                             </div>
-                            <!-- /.contacts-list-info -->
                           </a>
                         </li>
-                        <!-- End Contact Item -->
                       </ul>
-                      <!-- /.contacts-list -->
                     </div>
-                    <!-- /.direct-chat-pane -->
                   </div>
-                  <!-- /.card-body -->
                   <div class="card-footer">
                     <form action="#" method="post">
                       <div class="input-group">
@@ -412,13 +350,9 @@
                       </div>
                     </form>
                   </div>
-                  <!-- /.card-footer-->
                 </div>
-                <!-- /.direct-chat -->
               </div>
-              <!-- /.Start col -->
 
-              <!-- Start col -->
               <div class="col-lg-5 connectedSortable">
                 <div class="card text-white bg-primary bg-gradient border-primary mb-4">
                   <div class="card-header border-0">
@@ -453,15 +387,11 @@
                         <div class="text-white">Sales</div>
                       </div>
                     </div>
-                    <!--end::Row-->
                   </div>
                 </div>
               </div>
-              <!-- /.Start col -->
-            </div>
-            <!-- /.row (main row) -->
+            </div> --}}
           </div>
-          <!--end::Container-->
         </div>
 
 @endsection

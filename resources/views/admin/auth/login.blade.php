@@ -21,7 +21,8 @@
         <div class="card-body login-card-body">
           <p class="login-box-msg">Sign in to start your session</p>
 
-          <form action="" id="loginForm" method="post">
+          <form action="{{ route('admin.login.submit') }}" id="loginForm" method="post">
+            @csrf
             <div class="input-group mb-3">
               <input type="email" name="email" class="form-control" placeholder="Email" />
               <div class="input-group-text">
@@ -58,6 +59,32 @@
         </div>
       </div>
     </div>
+
+    <style>
+      .customerror {
+        top: 100% !important;
+      }
+    </style>
+
+    @if(session('success'))
+      <script type="module">
+          toastr.success("{{ session('success') }}");
+        </script>
+    @endif
+
+    @if(session('error'))
+        <script type="module">
+            toastr.error("{{ session('error') }}");
+        </script>
+    @endif
+
+    @if($errors->any())
+        <script type="module">
+            @foreach ($errors->all() as $error)
+                toastr.error("{{ $error }}");
+            @endforeach
+        </script>
+    @endif
    
   </body>
 </html>
