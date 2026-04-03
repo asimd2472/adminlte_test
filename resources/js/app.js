@@ -28,4 +28,5 @@ import 'datatables.net-bs5';
 import 'datatables.net-bs5/css/dataTables.bootstrap5.min.css';
 
 import './common.js';
+import '../../resources/js/user/common.js';
 

@@ -31,8 +31,8 @@
             >
 
               <li class="nav-item">
-                  <a href="{{ route('admin.dashboard') }}"
-                    class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+                  <a href="{{ route('user.dashboard') }}"
+                    class="nav-link {{ request()->routeIs('user.dashboard') ? 'active' : '' }}">
                     
                       <i class="nav-icon bi bi-speedometer"></i>
                       <p>Dashboard</p>
@@ -40,11 +40,30 @@
               </li>
 
               <li class="nav-item">
-                  <a href="{{ route('admin.users') }}"
-                    class="nav-link {{ request()->routeIs('admin.users') ? 'active' : '' }}">
+                  <a href="#"
+                    class="nav-link">
                     
-                      <i class="bi bi-people-fill"></i>
-                      <p>Users</p>
+                      <i class="bi bi-arrow-up-square"></i>
+                      <p>My Orders</p>
+                  </a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="{{ route('user.profile') }}"
+                    class="nav-link {{ request()->routeIs('user.profile') ? 'active' : '' }}">
+                    
+                      <i class="bi bi-person-circle"></i>
+                      <p>Profile Information</p>
+                  </a>
+              </li>
+
+
+              <li class="nav-item">
+                  <a href="{{ route('user.logout') }}"
+                    class="nav-link {{ request()->routeIs('user.logout') ? 'active' : '' }}">
+                    
+                      <i class="bi bi-box-arrow-right"></i>
+                      <p>Logout</p>
                   </a>
               </li>
               

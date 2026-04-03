@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
-class AuthController extends Controller
+class UserAuthController extends Controller
 {
     public function index()
     {
-        return view('admin.auth.login');
+        return view('user.auth.login');
     }
 
     public function login(Request $request)
@@ -25,15 +25,15 @@ class AuthController extends Controller
             if (Auth::attempt([
                 'email' => $credentials['email'],
                 'password' => $credentials['password'],
-                'user_type' => 1
+                'user_type' => 2
             ])) {
                 $request->session()->regenerate();
 
-                return redirect()->route('admin.dashboard')
+                return redirect()->route('user.dashboard')
                     ->with('success', 'Login successful!');
             }
             return back()->withErrors([
-                'email' => 'Invalid credentials or not authorized as admin',
+                'email' => 'Invalid credentials or not authorized as user',
             ])->withInput();
 
         } catch (ValidationException $e) {
@@ -54,7 +54,7 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('admin.login')
+        return redirect()->route('user.login')
             ->with('success', 'Logged out successfully!');
     }
 }
