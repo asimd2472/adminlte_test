@@ -1,0 +1,805 @@
+{
+  "manufacturing_types": [
+    {
+      "name": "CNC Machining",
+      "materials": [
+        {
+          "name": "Aluminum",
+          "types": [
+            {
+              "name": "Aluminum 6061",
+              "colors": [
+                    { "name": "Silver white", "code": "#dcdfe3" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Aluminum 7075",
+              "colors": [
+                    { "name": "Silver white", "code": "#dcdfe3" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Aluminum 5052",
+              "colors": [
+                    { "name": "Silver white", "code": "#dcdfe3" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Aluminum 2A12",
+              "colors": [
+                    { "name": "Silver white", "code": "#dcdfe3" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Stainless steel",
+          "types": [
+            {
+              "name": "Stainless steel 304",
+              "colors": [
+                    { "name": "Silver", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Stainless steel 316/316L",
+              "colors": [
+                    { "name": "Silver", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Stainless steel 303",
+              "colors": [
+                    { "name": "Silver", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Stainless steel 430",
+              "colors": [
+                    { "name": "Silver", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Stainless steel 201",
+              "colors": [
+                    { "name": "Silver", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Brass",
+          "types": [
+            {
+              "name": "Brass C360",
+              "colors": [
+                    { "name": "Brass", "code": "#bfab6f" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Copper",
+          "types": [
+            {
+              "name": "Copper",
+              "colors": [
+                    { "name": "Copper", "code": "#ba6e40" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Titanium",
+          
+          "types": [
+            {
+              "name": "Titanium Gr5 (TC4)",
+              "colors": [
+                    { "name": "Silver", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Mild steel",
+          
+          "types": [
+            {
+              "name": "Mild steel 1018",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Mild steel 1045",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Mild steel A36",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Alloy steel",
+          "types": [
+            {
+              "name": "Alloy steel 4140",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Alloy steel 4340",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Alloy steel 1215",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Tool steel",
+          "types": [
+            {
+              "name": "Tool steel D2",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Tool steel A2",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Tool steel O1",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Tool steel A3",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Tool steel S7",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Tool steel H13",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Spring steel",
+          "types": [
+            {
+              "name": "Spring steel",
+              "colors": [
+                    { "name": "Silver gray", "code": "#c0c0c0" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "ABS",
+          "types": [
+            {
+              "name": "ABS",
+              "colors": [
+                    { "name": "Light Beige", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "ABS Flame Retardant",
+              "colors": [
+                    { "name": "Light Beige", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Polycarbonate (PC)",
+          "types": [
+            {
+              "name": "Polycarbonate (PC)",
+              "colors": [
+                    { "name": "Transparent to bluish-purple (increasing thickness)", "code": "#fffff0" },
+                    { "name": "White", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Nylon",
+          "types": [
+            {
+              "name": "Nylon 6",
+              "colors": [
+                    { "name": "Ivory", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            },
+            {
+              "name": "Nylon 12",
+              "colors": [
+                    { "name": "Ivory", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Polypropylene (PP)",
+          
+          "types": [
+            {
+              "name": "Polypropylene (PP)",
+              "colors": [
+                    { "name": "White", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "POM",
+          
+          "types": [
+            {
+              "name": "POM",
+              "colors": [
+                    { "name": "White", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "PTFE (Teflon)",
+          
+          "types": [
+            {
+              "name": "Teflon",
+              "colors": [
+                    { "name": "White", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "PMMA (Acrylic)",
+          
+          "types": [
+            {
+              "name": "PMMA",
+              "colors": [
+                    { "name": "Transparent", "code": "#fffff0" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Polyethylene (PE)",
+          
+          "types": [
+            {
+              "name": "Polyethylene (PE)",
+              "colors": [
+                    { "name": "White", "code": "#fffff0" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "PEEK",
+          "types": [
+            {
+              "name": "PEEK",
+              "colors": [
+                    { "name": "Pale brown", "code": "#987654" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Bakelite",
+          "types": [
+            {
+              "name": "Bakelite",
+              "colors": [
+                    { "name": "Chrome yellow", "code": "#f09331" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "FR4",
+          
+          "types": [
+            {
+              "name": "FR4",
+              "colors": [
+                    { "name": "Green", "code": "#587c60" },
+                    { "name": "Yellow", "code": "#dcb443" },
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Rubber",
+          
+          "types": [
+            {
+              "name": "Rubber",
+              "colors": [
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        },
+        {
+          "name": "Carbon Fiber",
+          "types": [
+            {
+              "name": "Carbon Fiber Plate",
+              "colors": [
+                    { "name": "Black", "code": "#000" }
+                ],
+              "processes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3D Printing",
+      "materials": [
+        {
+          "name": "Resin",
+          "types": [
+            {
+                "name": "Standard white material (UTR 8360)",
+                "colors": [
+                    { "name": "Matte white", "code": "#ffffff" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "UTR Imagine Black",
+                "colors": [
+                    { "name": "Black(paint)", "code": "#000" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "UTR-8100 (transparent)",
+                "colors": [
+                    { "name": "Transparent(Spray varnish)", "code": "#f5f5f5" },
+                    { "name": "Matte diffuse", "code": "#f0f0f0" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "PWR Dark Black",
+                "colors": [
+                    { "name": "Black (waxed)", "code": "#f0f0f0" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "UTR-8100 (translucent)",
+                "colors": [
+                    { "name": "Translucent", "code": "#eaeaea" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "Somos &#174; Ledo",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "UTR 8220",
+                "colors": [
+                    { "name": "Tender green", "code": "#b8e986" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "Somos &#174; Taurus",
+                "colors": [
+                    { "name": "Black(paint)", "code": "#686868" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "UTR 3000",
+                "colors": [
+                    { "name": "Brown", "code": "#ad7154" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "UTR Therm",
+                "colors": [
+                    { "name": "Red translucent", "code": "#fd8888" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "Somos &#174; EvoLVe 128",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "UTR Flex",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "Somos &#174; PerFORM",
+                "colors": [
+                    { "name": "Nano-Ceramic White", "code": "#fff" }
+                ],
+                "processes": ["SLA"]
+            },
+            {
+                "name": "TDS EvoDent",
+                "colors": [
+                    { "name": "Waxy yellow", "code": "#fdf58f" }
+                ],
+                "processes": ["DLP"]
+            },
+            {
+                "name": "Formlabs ESD Resin",
+                "colors": [
+                    { "name": "Black", "code": "#000" }
+                ],
+                "processes": ["SLA"]
+            }
+          ]
+        },
+        {
+          "name": "Resin",
+          "types": [
+            {
+                "name": "PA12",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Dark black (dyeing)", "code": "#4a4a4a" }
+                    
+                ],
+                "processes": ["SLS"]
+            },
+            {
+                "name": "HP-PA-12",
+                "colors": [
+                    { "name": "Dark black (spray paint)", "code": "#4a4a4a" }
+                ],
+                "processes": ["MJF"]
+            },
+            {
+                "name": "Glass fiber nylon(PA12+35% GF)",
+                "colors": [
+                    { "name": "Light gray", "code": "#d7d7d7" },
+                    { "name": "Dark black (dyeing)", "code": "#4a4a4a" }
+                ],
+                "processes": ["SLs"]
+            }
+          ]
+        },
+        {
+          "name": "PLA",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "PLA",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Gray", "code": "#8e8c88" },
+                    { "name": "Yellow", "code": "#ff0" },
+                    { "name": "Red", "code": "#f00" },
+                    { "name": "Green", "code": "#0f0" },
+                    { "name": "Blue", "code": "#00f" },
+                    { "name": "Orange", "code": "#ff4500" },
+                    { "name": "Pink", "code": "#e65e68" },
+                    { "name": "Multi-colors", "code": "linear-gradient(to bottom right, #FF0000 10%, #ffa500 30%, #ffff00 40%, #008000 50%, #0000FF 80%)" },
+                    { "name": "Marber", "code": "url(https://pcb-files.s3.us-west-2.amazonaws.com/webfilerobots/260103/3d-mable-img.jpg) no-repeat center" },
+                    { "name": "Silk gold", "code": "linear-gradient(to bottom right, #DB8C08 0%, #FCDF9D 50%, #DB8C08 100%)" },
+                    { "name": "Silk silver", "code": "linear-gradient(to bottom right, #A5A9B4 0%, #F3F3F3 50%, #A5A9B4 100%)" },
+                    { "name": "Silk copper", "code": "linear-gradient(to bottom right, #8D492A 0%, #DA865B 50%, #8D492A 100%)" },
+                    { "name": "Arctic Whisper (blue-white gradient)", "code": "linear-gradient(to bottom right, #DBFFFE 0%, #66D4D4 100%)" },
+                    { "name": "Solar Breeze (red-white gradient)", "code": "linear-gradient(to bottom right, #FFD1C4 0%, #FF522F 100%)" },
+                    { "name": "Ocean to Meadow (blue-green gradient)", "code": "linear-gradient(to bottom right, #47C7B6 0%, #1D7299 100%)" }
+                ],
+                "processes": ["FMD"]
+            },
+            {
+                "name": "PLA-CF",
+                "colors": [
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Royal blue", "code": "#2842ad" },
+                    { "name": "Burgundy red", "code": "#951e23" },
+                    { "name": "Matcha green", "code": "#5c9748" },
+                    { "name": "Lava gray", "code": "#4d5054" },
+                    { "name": "Jeans blue", "code": "#6e88bc" },
+                    { "name": "Iris purple", "code": "#69398e" }
+                ],
+                "processes": ["FDM"]
+            }
+          ]
+        },
+        {
+          "name": "ABS",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "ABS",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Silver Gray", "code": "#8e8c88" },
+                    { "name": "Red", "code": "#f00" },
+                    { "name": "Blue", "code": "#00f" },
+                    { "name": "Yellow", "code": "#ff0" },
+                    { "name": "Green", "code": "#0f0" }
+                    
+                ],
+                "processes": ["FDM"]
+            },
+            {
+                "name": "Stratasys ABS-ESD7",
+                "colors": [
+                    { "name": "Black", "code": "#000" }
+                ],
+                "processes": ["FDM"]
+            }
+          ]
+        },
+        {
+          "name": "PETG",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "PETG",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Gray", "code": "#8e8c88" },
+                    { "name": "Red", "code": "#f00" },
+                    { "name": "Blue", "code": "#00f" },
+                    { "name": "Yellow", "code": "#ff0" },
+                    { "name": "Green", "code": "#0f0" }
+                    
+                ],
+                "processes": ["FDM"]
+            },
+            {
+                "name": "PETG-CF",
+                "colors": [
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Violet Purple", "code": "#583061" },
+                    { "name": "Titan Gray", "code": "#565656" },
+                    { "name": "Brick Red", "code": "#9f332a" },
+                    { "name": "Malachite Green", "code": "#16b08e" },
+                    { "name": "Indigo blue", "code": "#324585" }
+                ],
+                "processes": ["FDM"]
+            }
+          ]
+        },
+        {
+          "name": "TPU",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "TPU(FDM)",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Gray", "code": "#8e8c88" },
+                    { "name": "Red", "code": "#f00" },
+                    { "name": "Blue", "code": "#00f" },
+                    { "name": "Yellow", "code": "#ff0" },
+                    { "name": "Green", "code": "#0f0" }
+                    
+                ],
+                "processes": ["FDM"]
+            },
+            {
+                "name": "TPU",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" }
+                ],
+                "processes": ["SLS"]
+            }
+          ]
+        },
+        {
+          "name": "PC",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "PC (Polycarbonate)",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Black translucent", "code": "#505050" },
+                    { "name": "Translucent", "code": "#eaeaea" }
+                    
+                ],
+                "processes": ["FDM"]
+            }
+          ]
+        },
+        {
+          "name": "ASA",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "ASA",
+                "colors": [
+                    { "name": "White", "code": "#ffffff" },
+                    { "name": "Black", "code": "#000" },
+                    { "name": "Gray", "code": "#8e8c88" },
+                    { "name": "Red", "code": "#f00" },
+                    { "name": "Blue", "code": "#00f" },
+                    { "name": "Yellow", "code": "#ff0" },
+                    { "name": "Green", "code": "#0f0" }
+                ],
+                "processes": ["FDM"]
+            }
+          ]
+        },
+        {
+          "name": "PEEK",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "PEEK",
+                "colors": [
+                    { "name": "Pale brown", "code": "#ae874a" }
+                ],
+                "processes": ["FDM"]
+            }
+          ]
+        },
+        {
+          "name": "PPS",
+          "infill": "20, 40, 60, 80, 95, 100",
+          "types": [
+            {
+                "name": "PPS-CF",
+                "colors": [
+                    { "name": "Black", "code": "#000" }
+                ],
+                "processes": ["FDM"]
+            }
+          ]
+        },
+        {
+          "name": "Aluminum",
+          "types": [
+            {
+                "name": "Aluminum (AlSi10Mg)",
+                "colors": [
+                    { "name": "Metallic", "code": "#aaaaaa" }
+                ],
+                "processes": ["SLM"]
+            }
+          ]
+        },
+        {
+          "name": "Stainless steel",
+          "types": [
+            {
+                "name": "Stainless steel 316L",
+                "colors": [
+                    { "name": "Metallic", "code": "#aaaaaa" }
+                ],
+                "processes": ["SLM"]
+            }
+          ]
+        },
+        {
+          "name": "Titanium",
+          "types": [
+            {
+                "name": "Titanium TC4",
+                "colors": [
+                    { "name": "Metallic", "code": "#aaaaaa" }
+                ],
+                "processes": ["SLM"]
+            }
+          ]
+        },
+        {
+          "name": "Tool steel",
+          "types": [
+            {
+                "name": "Tool steel",
+                "colors": [
+                    { "name": "Metallic", "code": "#aaaaaa" }
+                ],
+                "processes": ["SLM"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
