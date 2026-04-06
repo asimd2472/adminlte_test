@@ -1,0 +1,304 @@
+
+
+/* FILTER CARD IMPROVED */
+.filter-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #eee;
+
+    h5 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .filter-group {
+        margin-bottom: 20px;
+
+        h6 {
+            font-size: 12px;
+            font-weight: 700;
+            color: #888;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                color: #007bff;
+            }
+
+            input {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* CLICKABLE LINK RESET */
+.order-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* ORDER CARD */
+.order-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    transition: all 0.25s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        border-color: #ddd;
+    }
+
+    /* HEADER */
+    .order-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h6 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        span {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .status {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &.delivered {
+                background: #e6f7ed;
+                color: #28a745;
+            }
+
+            &.cancelled {
+                background: #fdecea;
+                color: #dc3545;
+            }
+
+            &.pending {
+                background: #fff4e5;
+                color: #ff9800;
+            }
+        }
+    }
+
+    /* BODY */
+    .order-body {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #eee;
+        }
+
+        .details {
+            flex: 1;
+
+            h6 {
+                margin: 0;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            p {
+                margin: 3px 0;
+                font-size: 13px;
+                color: #777;
+            }
+
+            .price {
+                font-weight: 600;
+                color: #222;
+            }
+        }
+
+        .order-meta {
+            display: flex;
+            align-items: center;
+
+            .arrow {
+                font-size: 18px;
+                color: #bbb;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    &:hover .arrow {
+        color: #007bff;
+        transform: translateX(3px);
+    }
+}
+
+.order-search-bar {
+    margin-bottom: 20px;
+
+    .search-wrapper {
+        display: flex;
+        align-items: center;
+        background: #f1f3f6;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #e0e0e0;
+
+        input {
+            flex: 1;
+            border: none;
+            padding: 12px 15px;
+            font-size: 14px;
+            background: transparent;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .search-btn {
+            background: #2874f0; // Flipkart style blue
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+
+            i {
+                font-size: 14px;
+            }
+
+            &:hover {
+                background: #1f5dc1;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .order-search-bar {
+        .search-wrapper {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+
+            .search-btn {
+                width: 100%;
+                justify-content: center;
+                border-radius: 0;
+            }
+        }
+    }
+    .filter-toggle-btn {
+        margin-top: -18px;
+    }
+}
+
+.order-top-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .order-search-bar {
+        flex: 1; // full width
+    }
+
+    .filter-toggle-btn {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Make filter fixed sidebar */
+    #filterSidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100%;
+        background: #fff;
+        z-index: 1050;
+        overflow-y: auto;
+        transition: 0.3s;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+
+    /* Active state */
+    #filterSidebar.active {
+        left: 0;
+    }
+
+    /* Overlay background */
+    .filter-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        z-index: 1040;
+        display: none;
+    }
+
+    .filter-overlay.active {
+        display: block;
+    }
+
+    .order-top-bar {
+        gap: 8px;
+
+        .order-search-bar {
+            flex: 1;
+        }
+
+        .filter-toggle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 42px;
+            width: 45px;
+            padding: 0;
+            margin-top: -18px;
+        }
+    }
+}

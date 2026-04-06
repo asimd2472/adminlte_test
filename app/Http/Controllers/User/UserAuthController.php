@@ -25,11 +25,12 @@ class UserAuthController extends Controller
             if (Auth::attempt([
                 'email' => $credentials['email'],
                 'password' => $credentials['password'],
-                'user_type' => 2
+                'user_type' => 2,
+                'status' => 1
             ])) {
                 $request->session()->regenerate();
 
-                return redirect()->route('user.dashboard')
+                return redirect()->route('user.profile')
                     ->with('success', 'Login successful!');
             }
             return back()->withErrors([
@@ -54,7 +55,7 @@ class UserAuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('user.login')
+        return redirect()->route('login')
             ->with('success', 'Logged out successfully!');
     }
 }
